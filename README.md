@@ -12,11 +12,11 @@
 10) 
 
 # AutoMount
-개요 : 리눅스 재부팅시 자동으로 Mount해주는기능
-설정파일 : /etc/fstab
-(파티션) (마운트포인트)  (파일시스템) (기능)
-ex) /dev/sr0 /test defaults 1 1
-주의사항 : 만약 오토마운트된 하드디스크가 제거되었을경우 실행오류발생함
+개요 : 리눅스 재부팅시 자동으로 Mount해주는기능 <br>
+설정파일 : /etc/fstab <br>
+(파티션) (마운트포인트)  (파일시스템) (기능) <br>
+ex) /dev/sr0 /test defaults 1 1 <br>
+주의사항 : 만약 오토마운트된 하드디스크가 제거되었을경우 실행오류발생함 <br>
 
 # 서버관련파일 설정사항
 1) 패키지 설치
@@ -34,7 +34,7 @@ ex) /dev/sr0 /test defaults 1 1
 장점 : 상대방 PC의 공간을 할당받아 사용가능 <br>
 단점 : 서버전원이 꺼저있을경우 데이터 접근불가능 <br>
 응용 : 파티션에 NFS적용시에는 해당 파티션 용량만큼만 할당가능 <br>
-설치 내용 :
+설치 내용 : <br>
 1) 패키지 : nfs
 2) 포트 : 2049/tcp
 3) 서비스 : nfs
@@ -42,8 +42,8 @@ ex) /dev/sr0 /test defaults 1 1
 5) 설정파일 : /etc/exports
 
 # DNS
-개요 : Domain Name Server, 도메인주소를 IP주소로 변환해주는 서버, 원래 사이트접속시 IP주소를 통한 접근을해야하지만 여러가지이유로 IP대신 Domain주소로 사이트접속을 하고 이러한 Domain과 IP를 맵핑해주는 서버가 DNS 서버 만약 DNS서버가 고장나면 www.naver.com통한 네이버접속이 불가능하고, 직접적인 네이버 IP입력을통한 접근만가능.
-설치 내용 :
+개요 : Domain Name Server, 도메인주소를 IP주소로 변환해주는 서버, 원래 사이트접속시 IP주소를 통한 접근을해야하지만 여러가지이유로 IP대신 Domain주소로 사이트접속을 하고 이러한 Domain과 IP를 맵핑해주는 서버가 DNS 서버 만약 DNS서버가 고장나면 www.naver.com통한 네이버접속이 불가능하고, 직접적인 네이버 IP입력을통한 접근만가능. <br>
+설치 내용 : <br>
 1) 패키지 : bind
 2) 포트 : 53/tcp, 53/udp
 3) 서비스 : dns
@@ -55,8 +55,8 @@ ex) /dev/sr0 /test defaults 1 1
 /var/named : named.rfc1912.zones에 설정한 파일있는곳 <br>
 
 # Web Server
-개요 :
-설치 내용 :
+개요 : <br>
+설치 내용 : <br>
 1) 패키지 : httpd 
 2) 포트 : 80/tcp
 3) 서비스 : http
@@ -77,7 +77,7 @@ www.jong.com : Linux Web Server , window.jong.com : Window Web Server , window �
 
 
 # DB Server
-개요 : 사용자의 데이터를 보관하는 데이터서버로 Linux에서는 mariadb(Mysql)을 사용중이다
+개요 : 사용자의 데이터를 보관하는 데이터서버로 Linux에서는 mariadb(Mysql)을 사용중이다 <br>
 
 
 
