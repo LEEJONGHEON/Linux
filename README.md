@@ -24,7 +24,7 @@ ex) /dev/sr0 /test defaults 1 1
 3) 서비스
 4) 데몬
 5) 설정 파일
-1 패키지 설치는 /dev/sr0 마운트해서 /Packages 폴더에서 관련 파일  찾아서 rpm으로 설치
+1 패키지 설치는 /dev/sr0 마운트해서 /Packages 폴더에서 관련 파일  찾아서 rpm으로 설치 <br>
 2,3번은 firewall-cmd 방화벽관련 명령어로 해결
 4 데몬실행 systemctl start (데몬이름)
 5 번 설정파일 설정,데이터 수정할때마다 데몬 재실행해줘야함
