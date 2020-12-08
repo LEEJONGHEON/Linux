@@ -48,16 +48,16 @@ ex) /dev/sr0 /test defaults 1 1
 2) 포트 : 53/tcp, 53/udp
 3) 서비스 : dns
 4) 데몬 : named
-5) 설정 파일 : 
-/etc/named.conf : 53번 포트 접속설정 등
-/etc/resolv.conf : DNS 서버 설정
-/etc/named.rfc1912.zones : DNS 파일 설정
-/var/named : named.rfc1912.zones에 설정한 파일있는곳
+5) 설정 파일 :  
+/etc/named.conf : 53번 포트 접속설정 등 <br>
+/etc/resolv.conf : DNS 서버 설정 <br>
+/etc/named.rfc1912.zones : DNS 파일 설정 <br>
+/var/named : named.rfc1912.zones에 설정한 파일있는곳 <br>
 
 # Web Server
 개요 :
 설치 내용 :
-1) 패키지 : httpd
+1) 패키지 : httpd 
 2) 포트 : 80/tcp
 3) 서비스 : http
 4) 데몬 : httpd
@@ -66,9 +66,9 @@ ex) /dev/sr0 /test defaults 1 1
 6) 주의 사항 : 
 
 # DNS, Web Server이용한실습
-1. DNS와 Web Server IP를 192.168.111.128로해놓고 domain을 www.jong.com으로 설정 , window 사용자에서 접속확인되면 성공(DNS와 Web Server 미분리)
-2. DNS를 192.168.111.128, Web Server 를 192.168.111.129 로 설정 domain www.jong.com , window 사용자에서 접속확인되면 성공(DNS와 Web Server 분리)
-3. DNS를 192.168.111.128, Linux Web Server 를 192.168.111.129 , Window Web Server 192.168.111.130 으로 설정
+1. DNS와 Web Server IP를 192.168.111.128로해놓고 domain을 www.jong.com으로 설정 , window 사용자에서 접속확인되면 성공(DNS와 Web Server 미분리) <br>
+2. DNS를 192.168.111.128, Web Server 를 192.168.111.129 로 설정 domain www.jong.com , window 사용자에서 접속확인되면 성공(DNS와 Web Server 분리) <br>
+3. DNS를 192.168.111.128, Linux Web Server 를 192.168.111.129 , Window Web Server 192.168.111.130 으로 설정 
 www.jong.com : Linux Web Server , window.jong.com : Window Web Server , window 사용자가 각 서버 접속가능하면 성공
 
 
