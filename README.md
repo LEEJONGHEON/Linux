@@ -25,20 +25,20 @@ ex) /dev/sr0 /test defaults 1 1
 단점 : 서버전원이 꺼저있을경우 데이터 접근불가능
 응용 : 파티션에 NFS적용시에는 해당 파티션 용량만큼만 할당가능
 설치 내용 :
-1)패키지 : nfs
-2)포트 : 2049/tcp
-3)서비스 : nfs
-4)데몬 : nfs
-5)설정파일 : /etc/exports
+1) 패키지 : nfs
+2) 포트 : 2049/tcp
+3) 서비스 : nfs
+4) 데몬 : nfs
+5) 설정파일 : /etc/exports
 
 # DNS
 개요 : Domain Name Server, 도메인주소를 IP주소로 변환해주는 서버, 원래 사이트접속시 IP주소를 통한 접근을해야하지만 여러가지이유로 IP대신 Domain주소로 사이트접속을 하고 이러한 Domain과 IP를 맵핑해주는 서버가 DNS 서버 만약 DNS서버가 고장나면 www.naver.com통한 네이버접속이 불가능하고, 직접적인 네이버 IP입력을통한 접근만가능.
 설치 내용 :
-1)패키지 : bind
-2)포트 : 53/tcp, 53/udp
-3)서비스 : dns
-4)데몬 : named
-5)설정 파일 : 
+1) 패키지 : bind
+2) 포트 : 53/tcp, 53/udp
+3) 서비스 : dns
+4) 데몬 : named
+5) 설정 파일 : 
 /etc/named.conf : 53번 포트 접속설정 등
 /etc/resolv.conf : DNS 서버 설정
 /etc/named.rfc1912.zones : DNS 파일 설정
